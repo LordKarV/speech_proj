@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
                 alignment: Alignment.topRight,
                 child: PopupMenuButton<String>(
                   icon: const CircleAvatar(
-                    radius: 24,
+                    radius: 23,
                     backgroundColor: Colors.blueGrey,
                     child: Icon(Icons.person, color: Colors.white),
                   ),
