@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "959958248558",
+    "project_id": "speech-app-91373",
+    "storage_bucket": "speech-app-91373.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959958248558:android:fc44cdf154f6e79d9a8a7f",
+        "android_client_info": {
+          "package_name": "com.example.speech_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959958248558-iqbdvokoltnoon3an8k97u1kuhceigdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyb4XCHzZ_ak0MqL5JOgQAyHMHZ-QPvE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959958248558-iqbdvokoltnoon3an8k97u1kuhceigdb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959958248558-i170vogfr0qbvs02hpb1alsp8du46jni.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.speechApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
