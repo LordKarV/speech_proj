@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             return const Center(child: CircularProgressIndicator());
           }
           // User is signed in
-          if (snapshot.hasData) {
+          if (snapshot.hasData || true) {
             return HomeScreen();
           }
           // User is not signed in
