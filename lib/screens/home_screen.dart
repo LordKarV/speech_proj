@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'record_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recentRecordings = [
@@ -46,7 +47,9 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  // Navigate to recording screen
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => RecordScreen()),
+                  );
                 },
                 child: Container(
                   width: double.infinity,

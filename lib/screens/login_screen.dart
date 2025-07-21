@@ -105,7 +105,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 onPressed: _submit,
                 child: Text(isLogin ? 'Login' : 'Sign Up'),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 10), 
               ElevatedButton.icon(
                 onPressed: _signInWithGoogle,
                 icon: const Icon(Icons.login),

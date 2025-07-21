@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'firebase_options.dart'; 
+import 'screens/record_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
