@@ -3,9 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>NSMicrophoneUsageDescription</key>
+<<<<<<< HEAD
 	<string>This app needs access to your microphone to display a live spectrogram.</string>
 	<key>AVAudioSessionCategory</key>
 	<string>playAndRecord</string>	
+=======
+	<string>This app needs access to microphone to record audio for spectrogram analysis.</string>
+>>>>>>> spect/spectrogram_v1
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
