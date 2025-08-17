@@ -2,6 +2,7 @@ import UIKit
 import Flutter
 import FirebaseCore
 import GoogleSignIn
+import AVFoundation
 
 @main
 @objc class AppDelegate: FlutterAppDelegate {
@@ -9,7 +10,29 @@ import GoogleSignIn
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
+    let session = AVAudioSession.sharedInstance()
+    do {
+      try session.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker])
+      try session.setActive(true)
+    } catch {
+      print("⚠️ AVAudioSession setup failed: \(error)")
+    }
     FirebaseApp.configure()
+    
+    print("🚀 Setting up audio processing channel...")
+    
+    // Setup the audio processing channel
+    let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
+    let audioChannel = FlutterMethodChannel(
+      name: "audio_processing_channel",
+      binaryMessenger: controller.binaryMessenger
+    )
+    
+    // ✅ This now works - pass the channel directly
+    PythonAudioProcessingService.shared.setupChannel(audioChannel)
+    
+    print("✅ Audio channel setup complete")
+    
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
